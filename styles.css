@@ -123,6 +123,40 @@ footer {
     background: #004d8b;
 }
 
+.team-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    background: #f4f4f4;
+    padding: 15px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.player-card img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.coach-grid {
+    justify-content: center;
+}
+
+.coach {
+    background: #d1ecf1;
+}
 
 
 
