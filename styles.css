@@ -37,3 +37,63 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Section de la boutique */
+.shop {
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Produits */
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.product .price {
+    font-size: 20px;
+    color: #005b96;
+    margin: 10px 0;
+}
+
+.product .add-to-cart {
+    background-color: #005b96;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.product .add-to-cart:hover {
+    background-color: #004b8e;
+}
