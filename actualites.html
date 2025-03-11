@@ -1,1 +1,112 @@
-<script src="script.js"></script>
+<!-- Page Actualités -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités - Manchester City</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Actualités</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="equipe.html">Équipe</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="calendrier.html">Calendrier</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="news-container">
+            <h2>Dernières Actualités</h2>
+            
+            <div class="news-card">
+                <img src="img/match.jpg" alt="Victoire de Manchester City">
+                <div class="news-content">
+                    <h3>Manchester City bat Liverpool 3-1</h3>
+                    <p>Les Citizens ont dominé Liverpool avec une performance exceptionnelle d'Erling Haaland.</p>
+                    <button class="toggle-btn" onclick="toggleDetails(this, 'details1')">Lire plus</button>
+                    <div class="news-details" id="details1">
+                        <img src="img/haaland-celebration.jpg" alt="Haaland célèbre">
+                        <p>Haaland a inscrit un doublé, tandis que De Bruyne a délivré deux passes décisives.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <img src="img/debruyne.jpg" alt="Kevin De Bruyne prolonge son contrat">
+                <div class="news-content">
+                    <h3>Kevin De Bruyne prolonge jusqu'en 2027</h3>
+                    <p>Le milieu belge a signé un nouveau contrat, affirmant son engagement avec le club.</p>
+                    <button class="toggle-btn" onclick="toggleDetails(this, 'details2')">Lire plus</button>
+                    <div class="news-details" id="details2">
+                        <img src="img/debruyne-signature.jpg" alt="De Bruyne signe son contrat">
+                        <p>De Bruyne a déclaré : "Manchester City est ma maison, je veux gagner encore plus de trophées ici."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <img src="img/haaland.jpg" alt="Haaland marque un triplé">
+                <div class="news-content">
+                    <h3>Haaland marque un triplé contre Arsenal</h3>
+                    <p>Le buteur norvégien continue d'impressionner en Premier League.</p>
+                    <button class="toggle-btn" onclick="toggleDetails(this, 'details3')">Lire plus</button>
+                    <div class="news-details" id="details3">
+                        <img src="img/haaland-hat-trick.jpg" alt="Haaland célèbre son triplé">
+                        <p>Avec 3 buts en une mi-temps, Haaland devient le meilleur buteur du championnat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="img/foden.jpg" alt="Phil Foden impressionne">
+                <div class="news-content">
+                    <h3>Phil Foden en pleine forme cette saison</h3>
+                    <p>Le jeune talent anglais enchaîne les performances de haut niveau.</p>
+                    <button class="toggle-btn" onclick="toggleDetails(this, 'details5')">Lire plus</button>
+                    <div class="news-details" id="details5">
+                        <img src="img/foden-action.jpg" alt="Foden en action">
+                        <p>Foden est devenu un joueur clé de l'effectif grâce à sa créativité et son efficacité.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <img src="img/champions-league.jpg" alt="City vise la Ligue des Champions">
+                <div class="news-content">
+                    <h3>Manchester City vise un nouveau titre européen</h3>
+                    <p>Les Citizens veulent remporter la Ligue des Champions cette saison.</p>
+                    <button class="toggle-btn" onclick="toggleDetails(this, 'details6')">Lire plus</button>
+                    <div class="news-details" id="details6">
+                        <img src="img/champions-league-trophy.jpg" alt="Trophée Ligue des Champions">
+                        <p>City se prépare pour les phases finales avec une détermination sans faille.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Manchester City Fan Site</p>
+    </footer>
+
+    <script>
+        function toggleDetails(button, detailsId) {
+    const details = document.getElementById(detailsId);
+    
+    if (details.style.display === "block") {
+        details.style.display = "none";
+        button.textContent = "Lire plus";
+    } else {
+        details.style.display = "block";
+        button.textContent = "Réduire";
+    }
+}
+
+    </script>
+</body>
+</html>
